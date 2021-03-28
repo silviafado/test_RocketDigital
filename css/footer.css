@@ -1,0 +1,143 @@
+/* Footer styling */
+
+/* Newsletter */
+#newsletter {
+    background-color: #FF723D;
+    display: flex;
+    align-items: center;
+    height: 336px;
+    justify-content: space-evenly;
+}
+
+#newsletter_text, #quick_links_container, #customer_area_container, #contact_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter_text {
+    justify-content: center;
+    margin-right: 72px;
+}
+
+#newsletter_button {
+    font-family: 'Mulish', sans-serif ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 180px;
+    height: 61px;
+    background:  #232323;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+}
+
+#suscribe {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    width: 100%;
+    border: 12px;
+    padding-right: 12px;
+    background-color: white;
+    border-radius: 12px;
+    float: right;
+}
+
+/* Company contact */
+.company_contact {
+    display: flex;
+    height: 620px;
+    justify-content: space-evenly;
+}
+
+#social_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+#daitool_logo_container {
+    padding-bottom: 37px;
+    padding-top: 98px;
+}
+
+.company_links {
+    padding-top: 120px;
+}
+
+#questions_contact {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23PX;
+}
+
+#contact_button {
+    font-family: 'Mulish', sans-serif ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #92D2D9;
+    width: 166px;
+    height: 54px;
+    background:  white;
+    border-radius: 12px;
+    border: 1px solid #92D2D9;;
+}
+
+#quick_links_container, #customer_area_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick_links, .customer_area {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quick_links_title, #customer_area_title {
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+#contact_title {
+    padding-bottom: 20px;
+}
+
+/* Payment method layout */
+#payment_icons_container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.payment_icons {
+    display: flex;
+}
+
+.payment_method {
+    margin-right: 30px;
+}
+
+/* Payment methods fonts */
+#visa_logo {
+    color: rgba(61, 123, 216, 0.65);
+}
+
+#mastercard_logo {
+    color: rgba(255, 75, 75, 0.65);
+}
+
+#paypal_logo {
+    color: rgba(108, 192, 227, 0.65);
+}
+
+#bitcoin_logo {
+    color: rgba(255, 135, 23, 0.65);
+}

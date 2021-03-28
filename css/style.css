@@ -1,0 +1,804 @@
+/* Importing all css files */
+@import './header.css';
+@import './slides.css';
+@import './footer.css';
+@import './menu_mobile.css';
+
+
+/* Main container styling */
+#main_container {
+    padding: 49px 8% 80px 8%;
+}
+
+/* Highlited products styling */
+#highlited_products {
+    width: 100%;
+    height: 389px;
+    padding: 82px 110px;
+    border-radius: 30px;
+    background-image: url('../assets/highlight_product.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* Services styling */
+#services_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 53px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 174px;
+    flex: 1 1 0;
+    width: 0;
+    border-radius: 30px;
+    margin-left: 38px;
+    margin-bottom: 34px;
+}
+
+.services:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
+  }
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* Background images: services, blog & banner */
+#safety_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/safety.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 0px;
+}
+
+#janitorial_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/janitorial.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#tools_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/tools.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#woodworking_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/woodworking.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 0px;
+}
+
+#gardening_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/gardening.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#office_services{
+    background-image: linear-gradient(90deg, #232323 15.27%, rgba(255, 255, 255, 0) 105.39%),
+    url('../assets/office_supples.jpg');
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.post_image {
+    background-image: url('../assets/blog_post.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px;
+    column-width: 700px;
+    margin: 40px 0px;
+}
+
+#banner {
+    background-image: url('../assets/top_footer.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 442px;
+}
+
+/* Logos and icons sizes */
+.partner_logo {
+    height: 46px;
+}
+
+#mitutoyo_logo {
+    height: 60px;
+}
+
+.icon {
+    width: 75px;
+}
+
+.rating_icon {
+    width: 76px;
+}
+
+.prod_arrow_icon {
+    width: 48px;
+}
+
+#arrow_image, #arrow_back_image {
+    height: 18px;
+}
+
+.circular_saw {
+    width: 285px;
+}
+
+.social_icon {
+    width: 58px;
+}
+
+#news_icon {
+    width: 116px;
+}
+
+/* Partners styling*/
+#logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+}
+
+#values {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 175px;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.values_text_container {
+    border: 1px solid #E7E7E7;
+    border-radius: 14px;
+    width: 222px;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#product_container {
+    height: 632px;
+    background-color: #F9F9FB;
+}
+
+#products_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 72px 0px 72px 8%;
+    background-color: #F9F9FB;
+    overflow: scroll;
+}
+
+.product_box {
+    height: 486px;
+    width: 348px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 30px;
+    margin-right: 51px;
+    background-color: white;
+    padding: 0px 28px 39px 28px;
+}
+
+#top10 {
+    display: flex;
+    flex-direction: column;
+}
+#top10_title {
+    width: 21vw;
+    padding-bottom: 65px;
+}
+
+#products_arrows {
+    display: flex;
+}
+.product_arrow {
+    margin-right: 21px;
+}
+
+.price_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 88px 0px 73px 0px;
+}
+
+.actual_price, #phone {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF723D;
+}
+
+.old_price {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8D8D8D;
+    text-decoration: line-through;
+}
+
+/* Blog styling */
+#blog_container {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 8% 67px 8%;
+    height: 621px;
+}
+
+#blog_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog_publications {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bolg_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#post1, #post2 {
+    margin-right: 21px;
+}
+
+/* Bottom banner styling */
+#banner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 285px;
+    justify-content: center;
+}
+
+#text_banner {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    display: flex;
+    color: #FFFFFF; 
+}
+
+#banner_button{
+    font-family: 'Mulish', sans-serif ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 180px;
+    height: 61px;
+    background:  #FF723D;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #999292;
+    padding-left: 2vw;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #999292;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #999292;
+} 
+
+/* :focus none */
+input:focus {
+    outline: none;
+}
+
+/* Hover buttons styling */
+#banner_button:hover {
+    background:#af5534;
+}
+
+#newsletter_button:hover {
+    background: rgb(72, 77, 80);
+}
+
+#contact_button:hover{
+    background: rgb(240, 224, 224);
+}
+
+/* Fonts styling */
+h2 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0px;
+}
+
+h4 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C4C4C4;
+    margin: 0px;
+}
+
+h6 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0px;
+}
+
+h7 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8D8D8D;
+}
+
+h8 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3D3D3D;
+    text-align: left;
+}
+
+h9 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #FF723D;
+    line-height: 20px;
+}
+
+h10 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 62px;
+    color: #000000;
+}
+
+h11 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #92D2D9;
+}
+
+h12 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}
+
+h13 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+h14 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #232323;
+}
+
+h15 {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h16 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+h17 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: black;
+    margin: 0px;
+    text-align: left;
+}
+
+h18 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5C5C5C;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 900px){
+    /* Header */
+    .title {
+        display: grid;
+        height: 152px;
+        grid-template-areas: 
+        "i logo sign cart"
+        "search search search search";
+        padding: 0px 25px 21px 23px;
+        grid-template-columns: 35px 180px 50px 50px;
+    }
+    #daitol_logo_container {
+        order: 2;
+        grid-area: logo;
+    }
+    #signin_container{
+        order: 3;
+        grid-area: sign;
+    }
+    #signin_text {
+        display: none;
+    }
+    #cart_container{
+        order: 4;
+        grid-area: cart;
+    }
+    #cart_text {
+        display: none;
+    }
+    #search_container {
+        order: 5;
+        grid-area: search;
+    }
+    #language {
+        display: none;
+    }
+    #daitol_logo {
+        width: 125px;
+    }
+    #search {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .box+.box {
+        margin: 0px;
+    }
+    /* Menu version for mobile*/
+    .topnav {
+        width:40px;
+        overflow: visible;
+    }
+    .nested_navbar {
+        display: none;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    /* Slideshow */
+    #slideshow_container {
+        background-position: center; 
+    }
+    /* Main container */
+    #main_container{
+        padding: 0px 5% 80px 5%;
+    }
+    /* Highlighted products */
+    #highlited_products {
+        padding: 30px 22px;
+        height: 230px;
+        display: block;
+        border-radius: 12px;
+        content: "Lorem ipsulum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+    }
+    /* Services container */
+    #services_container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 30px;
+    }
+    .services {
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin-left: 0px;
+        width: 100%;
+        flex: none;
+        height: 140px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    /* Partners */
+    #logos {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .partner_logo, #mitutoyo_logo {
+        height: 30px;
+    }
+    #arrow_image, #arrow_back_image {
+        display: none;
+    }
+    /* Company values */
+    #values {
+        align-content: center;
+        flex-wrap: wrap;
+        height: 457px;
+    }
+    .values {
+        flex: 50%;
+        height: 160px;
+    }
+    .values_text_container {
+        border: none;
+        width: 150px;
+    }
+    /* Products */
+    #top10, .rating_icon {
+        display: none;
+    }
+    .product_box {
+        width: 163px;
+        height: 279px;
+    }
+    #products_row {
+        background-color: white;
+        padding: 26px 0px 26px 20px;
+    }
+    .price_container {
+        flex-direction: column;
+        padding: 0px;
+        align-items: flex-start;
+    }
+    #product_img {
+        width: 163px;
+        height: 163px;
+        padding: 15px;
+    }
+    .circular_saw {
+        display: none;
+    }
+    .actual_price {
+        font-size: 16px;
+    }
+    .old_price {
+        font-size: 14px;
+    }
+    /* Blog */
+    #blog_container {
+        padding: 21px 0px 35px 20px;
+        height: auto;
+    }
+    #blog_publications {
+        overflow: scroll;
+    }
+    .post_image {
+        width: 300px;
+        margin: 20px 0px;
+    }
+    /* Banner */
+    #banner {
+        height: 200px;
+        background-size: 250%;
+        padding-left: 20px;
+    }
+    #text_banner {
+        font-size: 32px;
+    }
+    #banner_button {
+        width: 144px;
+        height:42px;
+        background-color: #F9F9FB;
+        color: black;
+        font-size: 15px;
+    }
+    /* Footer */
+    /* Newsletter */
+    #news_icon {
+        transform: scale(0.5);
+    }
+    #newsletter {
+        display: block;
+        padding: 0px 20px;
+    }
+    #newsletter_icon_container {
+        display: block;
+    }
+    #suscribe {
+        display: block;
+        padding-right: 0px;
+        height: 56px;
+        width: 320px;
+    }
+    #newsletter_input {
+        width: 100%;
+    }
+    #newsletter_button {
+        float: right;
+        height: 40px;
+        width: 132px;
+    }
+    #newsletter_text {
+        margin: 0px;
+        display: block;
+    }
+    /* Company contacts */
+    .company_links {
+        padding-top: 50px;
+    }
+    #daitool_logo_container {
+        padding-top: 0px;
+    }
+    .company_contact {
+        flex-wrap: wrap;
+        padding: 47px 20px 50px 21px;
+        height: auto;
+        justify-content: flex-start;
+    }
+    #quick_links_container+#customer_area_container {
+        margin-left: 20px;
+    }
+    #contact_title, #contact_text {
+        display: none;
+    }
+    #questions_contact {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    #phone {
+        margin-bottom: 20px;
+    } 
+    /* Payment methods */
+    #payment {
+        display: none;
+    }
+    .payment_icons {
+        order: 1;
+    }
+    #copyright {
+        order: 2;
+        margin-top: 38px;
+    }
+    #payment_icons_container {
+        flex-direction: column;
+        padding-left: 2%;
+    }
+    /* Fonts */
+    h2, h4, h5, h6, h9, h11, h12,
+    h13, h14, h16 {
+        transform: scale(0.7);
+    }
+    h4 {
+        margin: 0px;
+    }
+    h6 {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        color: #C4C4C4; 
+    }
+    h7 {
+        font-size: 14px;
+    }
+    h8 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    h10 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h12 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h13 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    h15 {
+        font-size: 16px;
+    }
+    h17 {
+        font-size: 18px;
+    }
+    h18 {
+        font-size: 16px;
+    }
+}    
+

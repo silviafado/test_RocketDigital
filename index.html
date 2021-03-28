@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../test_RocketDigital/css/style.css"/>
+    <title>Daitool</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title">
+        <!-- Top Navigation Menu for Mobile -->
+        <div class="topnav">
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="menu_icon" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <ul>
+              <!-- "Hamburger menu" / "X icon" to close navigation bar -->
+              <img src="../test_RocketDigital/assets/close_menu.svg" href="javascript:void(0);" class="close_menu_icon" onclick="showMenu()">
+              <li><img id="daitool_logo_menu" src="../test_RocketDigital/assets/logo_daitool_black.png"></li>
+              <li><a href=""><h17>Products</h17></a></li>
+              <li><a href=""><h8>Safety</h8></a></li>
+              <li><a href=""><h8>Janitorial</h8></a></li>
+              <li><a href=""><h8>Woodworking</h8></a></li>
+              <li><a href=""><h8>Gardening</h8></a></li>
+              <li id="office_menu"><a href=""><h8>Office supplies</h8></a></li>
+              <li><a href=""><h17>About Us</h17></About></a></li>
+              <li><a href=""><h8>Blog</h8></a></li>
+              <li><a href=""><h8>Brands</h8></a></li>
+              <li><div id="divider_menu"><img src="../test_RocketDigital/assets/divider_menu.svg"></div></li>
+              <li><a href=""><h17>Need Help?</h17></a></li>
+              <li><div id="phone_menu">
+                    <img id="phone_icon" src="../test_RocketDigital/assets/phone_icon.svg">
+                    <h9>+123 456 789</h9>
+                  </div>
+              </li>
+              <li><div id="mail_menu">
+                    <img id="mail_icon" src="../test_RocketDigital/assets/mail_icon.svg">
+                    <h9>info@daitool.com</h9>
+                  </div>
+              </li>
+            </ul>
+          </div>       
+        </div>
+        <!-- Header -->
+        <div id="daitol_logo_container" class="box">
+          <img id="daitol_logo" src="../test_RocketDigital/assets/logo_daitool_white.png"/>
+        </div>
+        <div id="search_container" class="box">
+          <form id="search" action="/action_page.php">
+            <input type="text" placeholder="" name="search">
+            <button id="search_button" type="submit"><i class="fa fa-search"></i></button>
+          </form>   
+        </div>
+        <div id="signin_container" class="box">
+          <div id="signin">
+            <div class="flex_signin" id="signin_icon_conatiner">
+              <img id="signin_icon" src="../test_RocketDigital/assets/signin_icon.svg">
+            </div>
+            <div class="flex_signin" id="signin_text"><h2>Sign in</h2></div>
+          </div>    
+        </div>
+        <div id="cart_container" class="box">
+          <div id="cart">
+            <div class="flex_cart" id="cart_icon_conatiner">
+              <img id="cart_icon" src="../test_RocketDigital/assets/cart_icon.svg">
+            </div>
+            <div class="flex_cart" id="cart_text"><h2>Cart</h2></div>
+          </div>    
+        </div>
+        <div id="language" class="box"><h2>En | USD</h2></div>
+      </div>    
+    </header> 
+    <!-- Navbar for desktop -->
+    <div class="nested_navbar">
+      <nav id="navbar">
+        <div id="safety" class="box">SAFETY</div>
+        <div id="janitorial" class="box">JANITORIAL</div>
+        <div id="tools" class="box">TOOLS</div>
+        <div id="woodworking" class="box">WOODWORKING</div>
+        <div id="gardening" class="box">GARDENING</div>
+        <div id="office_supplies" class="box">OFFICE SUPPLIES</div>
+        <div id="blog" class="box">BLOG</div>
+        <div id="brands" class="box">BRANDS</div>
+        <div id="about" class="box">ABOUT US</div>
+      </nav>    
+    </div>  
+    <!-- Slideshow container -->
+    <div class="slideshow_container">
+      <!-- Full-width images with number and caption text -->
+      <div class="my_slides fade">
+       <img src="../test_RocketDigital/assets/homepage_slide.jpg" style="width:100%">
+      </div>
+      <div class="my_slides fade">
+        <img src="../test_RocketDigital/assets/woodworking.jpg" style="width:100%">
+      </div>
+      <div class="my_slides fade">
+        <img src="../test_RocketDigital/assets/gardening.jpg" style="width:100%">
+      </div>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="Client.currentSlide(1)"></span>
+      <span class="dot" onclick="Client.currentSlide(2)"></span>
+      <span class="dot" onclick="Client.currentSlide(3)"></span>
+    </div>
+    <br>
+    <!-- Main -->
+    <main id="main_container">
+      <div class="company" id="specialties">
+        <div id="highlited_products">
+          <h9>VIEWED CATEGORY</h9><br>
+          <h10>Highlited Product<br>Category</h10><br>
+          <h8>Lorem ipsulum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore</h8>
+        </div>
+        <div id="services_container">
+            <div class="services" id="safety_services">
+              <h4>Safety</h4>
+              <h5>Subtitulo</h5>
+            </div>
+            <div class="services" id="janitorial_services">
+              <h4>Janitorial</h4>
+              <h5>Subtitulo</h5>
+            </div>
+            <div class="services" id="tools_services">
+              <h4>Tools</h4>
+              <h5>Subtitulo</h5>
+            </div>
+            <div class="break"></div>
+            <div class="services" id="woodworking_services">
+              <h4>Woodworking</h4>
+              <h5>Subtitulo</h5>
+            </div>
+            <div class="services" id="gardening_services">
+              <h4>Gardening</h4>
+              <h5>Subtitulo</h5>
+            </div>
+            <div class="services" id="office_services">
+              <h4>Office Supplies</h4>
+              <h5>Subtitulo</h5>
+            </div>
+        </div>
+        </div>
+        <div id="partners">
+          <div id="logos">
+            <div class="partners" id="arrow_backwards">
+              <img id="arrow_back_image" class="partner_logo" src="../test_RocketDigital/assets/arrow_backwards.svg">
+            </div>
+            <div class="partners" id="pentel">
+              <img id="pentel_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_pentel.png">
+            </div>
+            <div class="partners" id="olfa">
+              <img id="olfa_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_olfa.png">
+            </div>
+            <div class="partners" id="vessel">
+              <img id="vessel_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_vessel.png">
+            </div>
+            <div class="partners" id="mitutoyo">
+              <img id="mitutoyo_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_mitutoyo.png">
+            </div>
+            <div class="partners" id="tone">
+              <img id="tone_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_tone.png">
+            </div>
+            <div class="partners" id="anex">
+              <img id="anex_logo" class="partner_logo" src="../test_RocketDigital/assets/logo_anex.png">
+            </div>
+            <div class="partners" id="arrow">
+              <img id="arrow_image" class="partner_logo" src="../test_RocketDigital/assets/arrow.svg">
+            </div>
+          </div>
+        </div>
+        <div id="values">
+          <div class="values" id="efficient">
+            <div class="values_icon" id="efficient_icon">
+              <img class="icon" src="../test_RocketDigital/assets/efficient_icon.svg">
+            </div>  
+            <div class="values_text_container">
+              <h17>Efficient</h17>
+              <h5>International Shipping</h5>
+            </div>  
+          </div>
+          <div class="values" id="high_quality">
+            <div class="values_icon" id="high_quality_icon">
+              <img class="icon" src="../test_RocketDigital/assets/quality_icon.svg">
+            </div> 
+            <div class="values_text_container">
+              <h17>High-Quality</h17>
+              <h5>Guaranteed</h5>
+            </div>
+          </div>
+          <div class="values" id="reliable">
+            <div class="values_icon" id="reliable_icon">
+              <img class="icon" src="../test_RocketDigital/assets/reliable_icon.svg">
+            </div>  
+            <div class="values_text_container">
+              <h17>Reliable</h17>
+              <h5>from $40</h5>
+            </div>   
+          </div>
+          <div class="values" id="global">
+            <div class="values_icon" id="reliable_icon">
+              <img class="icon" src="../test_RocketDigital/assets/global.svg">
+            </div>  
+            <div class="values_text_container">
+              <h17>Global</h17>
+              <h5>Ships to 50 countries</h5>
+            </div>  
+          </div>
+          <div class="values" id="customer_focus">
+            <div class="values_icon" id="customer_focus_icon">
+              <img class="icon" src="../test_RocketDigital/assets/customer_focus_icon.svg">
+            </div>  
+            <div class="values_text_container">
+              <h17>Customer Focus</h17>
+              <h5>from $40</h5>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>  
+    <div id="products_container">
+      <div id="products_row">
+        <div class="products" id="top10">
+          <div id="top10_title"><h6>This Weeks<br>Top 10 Selected<br>Products</h6></div> 
+          <div id="products_arrows">
+            <div class="product_arrow" id="prod_arrow_back">
+              <img class="prod_arrow_icon" src="../test_RocketDigital/assets/arrow_selected_productsBW.svg">
+            </div>
+            <div class="product_arrow" id="prod_arrow">
+              <img class="prod_arrow_icon" src="../test_RocketDigital/assets/arrow_selected_products.svg">
+            </div>
+          </div>
+        </div>
+        <div class="product_box" id="box1">
+          <div class="product_flex" id="product_img">
+            <img class="circular_saw" src="../test_RocketDigital/assets/product.jpg">
+          </div>
+          <h17>Product</h17><br>
+          <h7>Brief description</h7>
+          <div class="price_container">
+            <div class="actual_price">$300.98</div>
+            <div class="old_price">$350.99</div>
+            <div class="rating">
+              <img class="rating_icon" src="../test_RocketDigital/assets/ratings.svg">
+            </div>
+          </div>
+        </div>
+        <div class="product_box">
+          <div class="product_flex" id="product_img">
+            <img class="circular_saw" src="../test_RocketDigital/assets/product.jpg">
+          </div>
+          <h17>Product</h17><br>
+          <h7>Brief description</h7>
+          <div class="price_container">
+            <div class="actual_price">$300.98</div>
+            <div class="old_price">$350.99</div>
+            <div class="rating">
+              <img class="rating_icon" src="../test_RocketDigital/assets/ratings.svg">
+            </div>
+          </div>
+        </div>
+        <div class="product_box">
+          <div class="product_flex" id="product_img">
+            <img class="circular_saw" src="../test_RocketDigital/assets/product.jpg">
+          </div>
+          <h17>Product</h17><br>
+          <h7>Brief description</h7>
+          <div class="price_container">
+            <div class="actual_price">$300.98</div>
+            <div class="old_price">$350.99</div>
+            <div class="rating">
+              <img class="rating_icon" src="../test_RocketDigital/assets/ratings.svg">
+            </div>
+          </div>
+        </div>
+        <div class="product_box">
+          <div class="product_flex" id="product_img">
+            <img class="circular_saw" src="../test_RocketDigital/assets/product.jpg">
+          </div>
+          <h17>Product</h17><br>
+          <h7>Brief description</h7>
+          <div class="price_container">
+            <div class="actual_price">$300.98</div>
+            <div class="old_price">$350.99</div>
+            <div class="rating">
+              <img class="rating_icon" src="../test_RocketDigital/assets/ratings.svg">
+            </div>
+          </div>
+        </div>
+        <div class="product_box">
+          <div class="product_flex" id="product_img">
+            <img class="circular_saw" src="../test_RocketDigital/assets/product.jpg">
+          </div>
+          <div class="product_text_container">
+            <h17>Product</h17><br>
+            <h7>Brief description</h7>
+            <div class="price_container">
+              <div class="actual_price">$300.98</div>
+              <div class="old_price">$350.99</div>
+              <div class="rating">
+                <img class="rating_icon" src="../test_RocketDigital/assets/ratings.svg">
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div id="blog_container">
+      <div id="blog_title">
+        <h6>Blog Posts</h6>
+        <h11>+ View All</h11>
+      </div>
+      <div id="blog_publications">
+        <div class="blog_post" id="post1">
+          <div class="post_image"></div>
+          <h17>Blog post publication 1</h17><br>
+          <h8>Author</h8>
+        </div>  
+        <div class="blog_post" id="post2">
+          <div class="post_image"></div>
+          <h17>Blog post publication 1</h17><br>
+          <h8>Author</h8>
+        </div>
+        <div class="blog_post" id="post3">
+          <div class="post_image"></div>
+          <h17>Blog post publication 1</h17><br>
+          <h8>Author</h8>
+        </div>
+      </div>  
+    </div>
+    <div id="banner">
+      <div id="text_banner">70% off</div>
+      <div id="banner_button_container">
+        <button type="button" class="button" id="banner_button">SUSCRIBE</button>
+      </div>
+    </div>      
+    <!-- Footer -->
+    <footer>
+      <div id="newsletter">
+        <div id="newsletter_icon_container">
+          <img id="news_icon" src="../test_RocketDigital/assets/newsletter.svg">
+        </div>
+        <div id="newsletter_text">
+          <h12>Sign Up for Newsletter</h12><br>
+          <h13>Lorem ipsulum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</h13>
+        </div>
+        <div id="subscribe_container">
+          <form id="suscribe" action="/action_page.php">
+            <input id="newsletter_input" type="text" placeholder="Enter your email here" name="newsletter">
+            <button id="newsletter_button" type="submit">SUSCRIBE</button>
+          </form> 
+        </div>
+      </div>
+      <div class="company_contact">
+        <div class="footer" id="daitool_intro">
+          <div id="daitool_logo_container">
+            <img id="daitol_logo_footer" src="../test_RocketDigital/assets/logo_daitool_black.png">
+          </div>
+          <h14>Daitool is the global reference site for high-quality,<br>
+               Japanese brand, for indutrial tools and supplies.<br>
+               We empower clients to build better, anywhere<br>
+               inthe world.
+          </h14>
+          <div id="social_container">
+            <div class="social_media">
+              <img class="social_icon" src="../test_RocketDigital/assets/youtube_icon.svg">
+            </div>
+            <div class="social_media">
+              <img class="social_icon" src="../test_RocketDigital/assets/linkedin_icon.svg">
+            </div>
+            <div class="social_media">
+              <img class="social_icon" src="../test_RocketDigital/assets/twitter_icon.svg">
+            </div>
+            <div class="social_media">
+              <img class="social_icon" src="../test_RocketDigital/assets/facebook_icon.svg">
+            </div>
+            <div class="social_media">
+              <img class="social_icon" src="../test_RocketDigital/assets/IG_icon.svg">
+            </div>
+          </div>
+        </div>
+        <div id="quick_links_container" class="company_links">
+          <div class="quick_links" id="quick_links_title"><h16>QUICK LINKS</h16></div>
+          <a class="quick_links"><h8>About us</h8></a>
+          <a class="quick_links"><h8>Blog</h8></a>
+          <a class="quick_links"><h8>Shop</h8></a>
+          <a class="quick_links"><h8>Brands</h8></a>
+          <a class="quick_links"><h8>Wholesale</h8></a>
+        </div>
+        <div id="customer_area_container" class="company_links">
+          <div class="customer_area" id="customer_area_title"><h16>CUSTOMER AREA</h16></div>
+          <a class="customer_area"><h8>My Account</h8></a>
+          <a class="customer_area"><h8>Deliveries</h8></a>
+          <a class="customer_area"><h8>Help Center (FAQs)</h8></a>
+          <a class="customer_area"><h8>Terms</h8></a>
+          <a class="customer_area"><h8>Privacy Policy</h8></a>
+        </div>
+        <div id="contact_container" class="company_links">
+          <div class="contact" id="contact_title"><h16>CONTACT</h16></div>
+          <div id="contact_text"><h14>Lorem ipsulum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod temporincididunt ut</h14></div>
+          <div id="questions_contact">
+            <div id="questions_text">
+              <h8>Have any questions?</h8>
+              <div id="phone">+ 123 456 789</div>
+            </div>
+            <div id="contact_button_container">
+              <button id="contact_button" type="button">CONTACT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="divider_container">
+        <img id="divider" src="../test_RocketDigital/assets/divider.svg">
+      </div>
+      <div id="payment_icons_container">
+        <div id="copyright"><h18>Daitool - © 2021 All Rights Reserved</h18></div>
+        <div class="payment_icons">
+          <div class="payment_method" id="payment"><h14>Payment</h14></div>
+          <div class="payment_method" id="visa_logo"><h15>VISA</h15></div>
+          <div class="payment_method" id="mastercard_logo"><h15>MASTERCARD</h15></div>
+          <div class="payment_method" id="paypal_logo"><h15>PAYPAL</h15></div>
+          <div class="payment_method" id="bitcoin_logo"><h15>BITCOIN</h15></div>
+        </div>  
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files -->
+  <script type="text/javascript" src="../test_RocketDigital/js/slides.js"></script>
+  <script type="text/javascript" src="../test_RocketDigital/js/menu.js"></script>
+  </body>
+</html>

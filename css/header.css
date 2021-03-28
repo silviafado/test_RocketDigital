@@ -1,0 +1,102 @@
+/* Header and navbar styling */
+
+/* Header styling */
+.title {
+    background-color: #FF723D;
+    display: grid;
+    grid-area: ti;
+    grid-template-rows: 94px;
+    grid-template-columns: 10px 200px auto 80px 80px 80px;
+    grid-template-areas: 
+    "ti ti ti ti ti ti";
+    align-items: center;
+    padding: 0px 72px;
+}
+
+#search {
+    background-color: #FFFFFF;
+    height: 35px; 
+    border-radius: 20px;
+    width: 100%;
+    margin-right: 25%;
+    margin-left: 25%;
+    display: flex;
+    float: right;
+    justify-content: center;
+}
+
+input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-radius: 20px;
+}
+
+#search_button {
+    background: transparent;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box+.box {
+    margin-left: 20px;
+}
+
+/* Header elements alignment */
+#daitol_logo_container {
+    justify-content: flex-start;
+}
+  
+#signin, #cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signin_icon_conatiner, #cart_icon_conatiner {
+    flex-shrink: 1;
+}
+
+#signin_text, #cart_text {
+    float: inline-end;
+}
+
+/* Logos and icon sizes */
+#daitol_logo {
+    width: 200px;
+}
+
+#signin_icon {
+    width: 21px;
+}
+
+#cart_icon {
+    width: 60px;
+}
+
+/* Navbar styling */
+.nested_navbar {
+    height: 45px;
+    background-color: #92D2D9;
+    display: flex;  
+}
+  
+#navbar {  
+    float: left;
+    display: flex;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding-left: 71px;
+}  

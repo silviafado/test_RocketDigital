@@ -1,0 +1,83 @@
+/* Style the navigation menu for mobile */
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+#myLinks {
+    width: 285px;
+    height: 809px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+    padding-top: 38px;
+    z-index: 99;
+}
+  
+/* Hide the links inside the navigation menu */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    font-size: 30px;
+    text-decoration: none;
+}
+  
+/* Style the hamburger menu */
+.topnav a.menu_icon {
+    background-color: transparent;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+}
+
+.close_menu_icon {
+    color: black;
+    position: absolute;
+    left: 25px;
+    width: 20px;
+    top: 45px;
+}
+
+/* Styling menu content */
+#daitool_logo_menu {
+    height: 28px;
+    margin-bottom: 39px;
+}
+
+/* Remove bullets ul */
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+#office_menu {
+    margin-bottom: 29px;
+}
+
+#phone_icon {
+    width: 16px;
+}
+
+#phone_menu {
+  line-height: 40px;
+}
+
+#mail_icon {
+    width: 16px;
+}
+
+#divider_menu {
+    margin-left: -43px;
+    margin-top: 36px;
+    margin-bottom: 39px;
+    width: 241px;
+}
